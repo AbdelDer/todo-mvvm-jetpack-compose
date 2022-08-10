@@ -3,7 +3,7 @@ package com.plcoding.mvvmtodoapp.data
 import kotlinx.coroutines.flow.Flow
 
 class TodoRepositoryImpl(
-    val todoDao: TodoDao
+     val todoDao: TodoDao
 ) : TodoRepository {
     override suspend fun insertTodo(todo: Todo) {
         todoDao.insertTodo(todo)
